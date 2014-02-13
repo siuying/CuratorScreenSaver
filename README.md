@@ -2,7 +2,7 @@
 
 Save your screen.
 
-![Preview](http://f.cl.ly/items/3Z0V3H30061L3L0C0945/%E7%85%A7%E7%89%87.JPG)
+![Preview](http://f.cl.ly/items/173T1E3L2b0o3M0s3t3r/%E7%85%A7%E7%89%87.JPG)
 
 ## Wat?
 

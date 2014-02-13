@@ -1,707 +1,583 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>12AA0C0CCA144A97820392B0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EFB7D724A9A647E2ABF4007D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>365D48C7C35C43C6969DD8D4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-CuratorScreenSaver.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods-CuratorScreenSaver.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54754F2D18AD0970001C8220</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>54754F4318AD0970001C8220</string>
-				<string>54754F3A18AD0970001C8220</string>
-				<string>54754F3918AD0970001C8220</string>
-				<string>365D48C7C35C43C6969DD8D4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54754F2E18AD0970001C8220</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0500</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Ignition Soft</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>54754F3118AD0970001C8220</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>54754F2D18AD0970001C8220</string>
-			<key>productRefGroup</key>
-			<string>54754F3918AD0970001C8220</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>54754F3718AD0970001C8220</string>
-			</array>
-		</dict>
-		<key>54754F3118AD0970001C8220</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>54754F4D18AD0970001C8220</string>
-				<string>54754F4E18AD0970001C8220</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>54754F3218AD0970001C8220</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>54754F4C18AD0970001C8220</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>54754F3318AD0970001C8220</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>54754F3E18AD0970001C8220</string>
-				<string>54754F3C18AD0970001C8220</string>
-				<string>12AA0C0CCA144A97820392B0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>54754F3418AD0970001C8220</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>54754F3518AD0970001C8220</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>54754F4818AD0970001C8220</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>54754F3618AD0970001C8220</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXRezBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>54754F3718AD0970001C8220</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>54754F4F18AD0970001C8220</string>
-			<key>buildPhases</key>
-			<array>
-				<string>F4FAA0C0566647748D07C45D</string>
-				<string>54754F3218AD0970001C8220</string>
-				<string>54754F3318AD0970001C8220</string>
-				<string>54754F3418AD0970001C8220</string>
-				<string>54754F3518AD0970001C8220</string>
-				<string>54754F3618AD0970001C8220</string>
-				<string>F3958F2E4B2944FABEA7C9BF</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>CuratorScreenSaver</string>
-			<key>productName</key>
-			<string>CuratorScreenSaver</string>
-			<key>productReference</key>
-			<string>54754F3818AD0970001C8220</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>54754F3818AD0970001C8220</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>CuratorScreenSaver.saver</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>54754F3918AD0970001C8220</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>54754F3818AD0970001C8220</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54754F3A18AD0970001C8220</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>54754F3B18AD0970001C8220</string>
-				<string>54754F3D18AD0970001C8220</string>
-				<string>54754F3F18AD0970001C8220</string>
-				<string>EFB7D724A9A647E2ABF4007D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54754F3B18AD0970001C8220</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Cocoa.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Cocoa.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>54754F3C18AD0970001C8220</key>
-		<dict>
-			<key>fileRef</key>
-			<string>54754F3B18AD0970001C8220</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>54754F3D18AD0970001C8220</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>ScreenSaver.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/ScreenSaver.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>54754F3E18AD0970001C8220</key>
-		<dict>
-			<key>fileRef</key>
-			<string>54754F3D18AD0970001C8220</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>54754F3F18AD0970001C8220</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>54754F4018AD0970001C8220</string>
-				<string>54754F4118AD0970001C8220</string>
-				<string>54754F4218AD0970001C8220</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Other Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54754F4018AD0970001C8220</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>AppKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/AppKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>54754F4118AD0970001C8220</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreData.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreData.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>54754F4218AD0970001C8220</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>54754F4318AD0970001C8220</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>54754F4A18AD0970001C8220</string>
-				<string>54754F4B18AD0970001C8220</string>
-				<string>54754F4418AD0970001C8220</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>CuratorScreenSaver</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54754F4418AD0970001C8220</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>54754F4518AD0970001C8220</string>
-				<string>54754F4618AD0970001C8220</string>
-				<string>54754F4918AD0970001C8220</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54754F4518AD0970001C8220</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>CuratorScreenSaver-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54754F4618AD0970001C8220</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>54754F4718AD0970001C8220</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54754F4718AD0970001C8220</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54754F4818AD0970001C8220</key>
-		<dict>
-			<key>fileRef</key>
-			<string>54754F4618AD0970001C8220</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>54754F4918AD0970001C8220</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CuratorScreenSaver-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54754F4A18AD0970001C8220</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CuratorScreenSaverView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54754F4B18AD0970001C8220</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CuratorScreenSaverView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54754F4C18AD0970001C8220</key>
-		<dict>
-			<key>fileRef</key>
-			<string>54754F4B18AD0970001C8220</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>54754F4D18AD0970001C8220</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.9</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>macosx</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>54754F4E18AD0970001C8220</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.9</string>
-				<key>SDKROOT</key>
-				<string>macosx</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>54754F4F18AD0970001C8220</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>54754F5018AD0970001C8220</string>
-				<string>54754F5118AD0970001C8220</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>54754F5018AD0970001C8220</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>365D48C7C35C43C6969DD8D4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>CuratorScreenSaver/CuratorScreenSaver-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>CuratorScreenSaver/CuratorScreenSaver-Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(HOME)/Library/Screen Savers</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>saver</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>54754F5118AD0970001C8220</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>365D48C7C35C43C6969DD8D4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>CuratorScreenSaver/CuratorScreenSaver-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>CuratorScreenSaver/CuratorScreenSaver-Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(HOME)/Library/Screen Savers</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>saver</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>EFB7D724A9A647E2ABF4007D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-CuratorScreenSaver.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>F3958F2E4B2944FABEA7C9BF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-CuratorScreenSaver-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>F4FAA0C0566647748D07C45D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>54754F2E18AD0970001C8220</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12AA0C0CCA144A97820392B0 /* libPods-CuratorScreenSaver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB7D724A9A647E2ABF4007D /* libPods-CuratorScreenSaver.a */; };
+		54754F3C18AD0970001C8220 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54754F3B18AD0970001C8220 /* Cocoa.framework */; };
+		54754F3E18AD0970001C8220 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54754F3D18AD0970001C8220 /* ScreenSaver.framework */; };
+		54754F4818AD0970001C8220 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54754F4618AD0970001C8220 /* InfoPlist.strings */; };
+		54754F4C18AD0970001C8220 /* CuratorScreenSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54754F4B18AD0970001C8220 /* CuratorScreenSaverView.m */; };
+		54754F5618AD0BAD001C8220 /* CuratorClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 54754F5418AD0BAD001C8220 /* CuratorClient.h */; };
+		54754F5718AD0BAD001C8220 /* CuratorClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 54754F5518AD0BAD001C8220 /* CuratorClient.m */; };
+		54754F5A18AD0D09001C8220 /* CuratorImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 54754F5818AD0D09001C8220 /* CuratorImage.h */; };
+		54754F5B18AD0D09001C8220 /* CuratorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 54754F5918AD0D09001C8220 /* CuratorImage.m */; };
+		54754F6218AD0E80001C8220 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54754F6118AD0E7F001C8220 /* XCTest.framework */; };
+		54754F6818AD0E80001C8220 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54754F6618AD0E80001C8220 /* InfoPlist.strings */; };
+		54754F7218AD0F3A001C8220 /* CuratorClientSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 54754F7118AD0F3A001C8220 /* CuratorClientSpec.m */; };
+		8011E2BB114A46358144B289 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C6C07A1F15D4FBBA0D54D7B /* libPods.a */; };
+		80BE25AE3A1947FE848B413A /* libPods-CuratorScreenSaverTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA244A2D89246ADA1F46E41 /* libPods-CuratorScreenSaverTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54754F6C18AD0E80001C8220 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54754F2E18AD0970001C8220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54754F3718AD0970001C8220;
+			remoteInfo = CuratorScreenSaver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BA244A2D89246ADA1F46E41 /* libPods-CuratorScreenSaverTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CuratorScreenSaverTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		365D48C7C35C43C6969DD8D4 /* Pods-CuratorScreenSaver.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuratorScreenSaver.xcconfig"; path = "Pods/Pods-CuratorScreenSaver.xcconfig"; sourceTree = "<group>"; };
+		54754F3818AD0970001C8220 /* CuratorScreenSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuratorScreenSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		54754F3B18AD0970001C8220 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		54754F3D18AD0970001C8220 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		54754F4018AD0970001C8220 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		54754F4118AD0970001C8220 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		54754F4218AD0970001C8220 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		54754F4518AD0970001C8220 /* CuratorScreenSaver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CuratorScreenSaver-Info.plist"; sourceTree = "<group>"; };
+		54754F4718AD0970001C8220 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		54754F4918AD0970001C8220 /* CuratorScreenSaver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CuratorScreenSaver-Prefix.pch"; sourceTree = "<group>"; };
+		54754F4A18AD0970001C8220 /* CuratorScreenSaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CuratorScreenSaverView.h; sourceTree = "<group>"; };
+		54754F4B18AD0970001C8220 /* CuratorScreenSaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CuratorScreenSaverView.m; sourceTree = "<group>"; };
+		54754F5418AD0BAD001C8220 /* CuratorClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CuratorClient.h; sourceTree = "<group>"; };
+		54754F5518AD0BAD001C8220 /* CuratorClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CuratorClient.m; sourceTree = "<group>"; };
+		54754F5818AD0D09001C8220 /* CuratorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CuratorImage.h; sourceTree = "<group>"; };
+		54754F5918AD0D09001C8220 /* CuratorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CuratorImage.m; sourceTree = "<group>"; };
+		54754F6018AD0E7F001C8220 /* CuratorScreenSaverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuratorScreenSaverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54754F6118AD0E7F001C8220 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		54754F6518AD0E80001C8220 /* CuratorScreenSaverTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CuratorScreenSaverTests-Info.plist"; sourceTree = "<group>"; };
+		54754F6718AD0E80001C8220 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		54754F6B18AD0E80001C8220 /* CuratorScreenSaverTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CuratorScreenSaverTests-Prefix.pch"; sourceTree = "<group>"; };
+		54754F7118AD0F3A001C8220 /* CuratorClientSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CuratorClientSpec.m; sourceTree = "<group>"; };
+		54754F7418AD1001001C8220 /* CuratorClientSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CuratorClientSettings.h; sourceTree = "<group>"; };
+		6C6C07A1F15D4FBBA0D54D7B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A87DA93C4CC34ADD926736FE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		EFB7D724A9A647E2ABF4007D /* libPods-CuratorScreenSaver.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CuratorScreenSaver.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E8E7C62BFD4BECA90AD2D8 /* Pods-CuratorScreenSaverTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuratorScreenSaverTests.xcconfig"; path = "Pods/Pods-CuratorScreenSaverTests.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54754F3318AD0970001C8220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54754F3E18AD0970001C8220 /* ScreenSaver.framework in Frameworks */,
+				54754F3C18AD0970001C8220 /* Cocoa.framework in Frameworks */,
+				12AA0C0CCA144A97820392B0 /* libPods-CuratorScreenSaver.a in Frameworks */,
+				8011E2BB114A46358144B289 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54754F5D18AD0E7F001C8220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54754F6218AD0E80001C8220 /* XCTest.framework in Frameworks */,
+				80BE25AE3A1947FE848B413A /* libPods-CuratorScreenSaverTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54754F2D18AD0970001C8220 = {
+			isa = PBXGroup;
+			children = (
+				54754F4318AD0970001C8220 /* CuratorScreenSaver */,
+				54754F6318AD0E80001C8220 /* CuratorScreenSaverTests */,
+				54754F3A18AD0970001C8220 /* Frameworks */,
+				54754F3918AD0970001C8220 /* Products */,
+				365D48C7C35C43C6969DD8D4 /* Pods-CuratorScreenSaver.xcconfig */,
+				A87DA93C4CC34ADD926736FE /* Pods.xcconfig */,
+				F6E8E7C62BFD4BECA90AD2D8 /* Pods-CuratorScreenSaverTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		54754F3918AD0970001C8220 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54754F3818AD0970001C8220 /* CuratorScreenSaver.saver */,
+				54754F6018AD0E7F001C8220 /* CuratorScreenSaverTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54754F3A18AD0970001C8220 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54754F3B18AD0970001C8220 /* Cocoa.framework */,
+				54754F3D18AD0970001C8220 /* ScreenSaver.framework */,
+				54754F6118AD0E7F001C8220 /* XCTest.framework */,
+				54754F3F18AD0970001C8220 /* Other Frameworks */,
+				EFB7D724A9A647E2ABF4007D /* libPods-CuratorScreenSaver.a */,
+				6C6C07A1F15D4FBBA0D54D7B /* libPods.a */,
+				0BA244A2D89246ADA1F46E41 /* libPods-CuratorScreenSaverTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54754F3F18AD0970001C8220 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54754F4018AD0970001C8220 /* AppKit.framework */,
+				54754F4118AD0970001C8220 /* CoreData.framework */,
+				54754F4218AD0970001C8220 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		54754F4318AD0970001C8220 /* CuratorScreenSaver */ = {
+			isa = PBXGroup;
+			children = (
+				54754F5318AD0B8F001C8220 /* APIClient */,
+				54754F4A18AD0970001C8220 /* CuratorScreenSaverView.h */,
+				54754F4B18AD0970001C8220 /* CuratorScreenSaverView.m */,
+				54754F4418AD0970001C8220 /* Supporting Files */,
+			);
+			path = CuratorScreenSaver;
+			sourceTree = "<group>";
+		};
+		54754F4418AD0970001C8220 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54754F4518AD0970001C8220 /* CuratorScreenSaver-Info.plist */,
+				54754F4618AD0970001C8220 /* InfoPlist.strings */,
+				54754F4918AD0970001C8220 /* CuratorScreenSaver-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54754F5318AD0B8F001C8220 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				54754F7418AD1001001C8220 /* CuratorClientSettings.h */,
+				54754F5418AD0BAD001C8220 /* CuratorClient.h */,
+				54754F5518AD0BAD001C8220 /* CuratorClient.m */,
+				54754F5818AD0D09001C8220 /* CuratorImage.h */,
+				54754F5918AD0D09001C8220 /* CuratorImage.m */,
+			);
+			name = APIClient;
+			sourceTree = "<group>";
+		};
+		54754F6318AD0E80001C8220 /* CuratorScreenSaverTests */ = {
+			isa = PBXGroup;
+			children = (
+				54754F7118AD0F3A001C8220 /* CuratorClientSpec.m */,
+				54754F6418AD0E80001C8220 /* Supporting Files */,
+			);
+			path = CuratorScreenSaverTests;
+			sourceTree = "<group>";
+		};
+		54754F6418AD0E80001C8220 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54754F6518AD0E80001C8220 /* CuratorScreenSaverTests-Info.plist */,
+				54754F6618AD0E80001C8220 /* InfoPlist.strings */,
+				54754F6B18AD0E80001C8220 /* CuratorScreenSaverTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		54754F3418AD0970001C8220 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54754F5618AD0BAD001C8220 /* CuratorClient.h in Headers */,
+				54754F5A18AD0D09001C8220 /* CuratorImage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		54754F3718AD0970001C8220 /* CuratorScreenSaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54754F4F18AD0970001C8220 /* Build configuration list for PBXNativeTarget "CuratorScreenSaver" */;
+			buildPhases = (
+				F4FAA0C0566647748D07C45D /* Check Pods Manifest.lock */,
+				54754F3218AD0970001C8220 /* Sources */,
+				54754F3318AD0970001C8220 /* Frameworks */,
+				54754F3418AD0970001C8220 /* Headers */,
+				54754F3518AD0970001C8220 /* Resources */,
+				54754F3618AD0970001C8220 /* Rez */,
+				F3958F2E4B2944FABEA7C9BF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CuratorScreenSaver;
+			productName = CuratorScreenSaver;
+			productReference = 54754F3818AD0970001C8220 /* CuratorScreenSaver.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+		54754F5F18AD0E7F001C8220 /* CuratorScreenSaverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54754F6E18AD0E80001C8220 /* Build configuration list for PBXNativeTarget "CuratorScreenSaverTests" */;
+			buildPhases = (
+				1FF26EB702954962931D5E2B /* Check Pods Manifest.lock */,
+				54754F5C18AD0E7F001C8220 /* Sources */,
+				54754F5D18AD0E7F001C8220 /* Frameworks */,
+				54754F5E18AD0E7F001C8220 /* Resources */,
+				3D83820F9D224425B0055590 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54754F6D18AD0E80001C8220 /* PBXTargetDependency */,
+			);
+			name = CuratorScreenSaverTests;
+			productName = CuratorScreenSaverTests;
+			productReference = 54754F6018AD0E7F001C8220 /* CuratorScreenSaverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54754F2E18AD0970001C8220 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Ignition Soft";
+				TargetAttributes = {
+					54754F5F18AD0E7F001C8220 = {
+						TestTargetID = 54754F3718AD0970001C8220;
+					};
+				};
+			};
+			buildConfigurationList = 54754F3118AD0970001C8220 /* Build configuration list for PBXProject "CuratorScreenSaver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 54754F2D18AD0970001C8220;
+			productRefGroup = 54754F3918AD0970001C8220 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54754F3718AD0970001C8220 /* CuratorScreenSaver */,
+				54754F5F18AD0E7F001C8220 /* CuratorScreenSaverTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54754F3518AD0970001C8220 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54754F4818AD0970001C8220 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54754F5E18AD0E7F001C8220 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54754F6818AD0E80001C8220 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		54754F3618AD0970001C8220 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FF26EB702954962931D5E2B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3D83820F9D224425B0055590 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-CuratorScreenSaverTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3958F2E4B2944FABEA7C9BF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4FAA0C0566647748D07C45D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54754F3218AD0970001C8220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54754F4C18AD0970001C8220 /* CuratorScreenSaverView.m in Sources */,
+				54754F5718AD0BAD001C8220 /* CuratorClient.m in Sources */,
+				54754F5B18AD0D09001C8220 /* CuratorImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54754F5C18AD0E7F001C8220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54754F7218AD0F3A001C8220 /* CuratorClientSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54754F6D18AD0E80001C8220 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54754F3718AD0970001C8220 /* CuratorScreenSaver */;
+			targetProxy = 54754F6C18AD0E80001C8220 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54754F4618AD0970001C8220 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54754F4718AD0970001C8220 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		54754F6618AD0E80001C8220 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54754F6718AD0E80001C8220 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54754F4D18AD0970001C8220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		54754F4E18AD0970001C8220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		54754F5018AD0970001C8220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A87DA93C4CC34ADD926736FE /* Pods.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CuratorScreenSaver/CuratorScreenSaver-Prefix.pch";
+				INFOPLIST_FILE = "CuratorScreenSaver/CuratorScreenSaver-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		54754F5118AD0970001C8220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A87DA93C4CC34ADD926736FE /* Pods.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CuratorScreenSaver/CuratorScreenSaver-Prefix.pch";
+				INFOPLIST_FILE = "CuratorScreenSaver/CuratorScreenSaver-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+		54754F6F18AD0E80001C8220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6E8E7C62BFD4BECA90AD2D8 /* Pods-CuratorScreenSaverTests.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CuratorScreenSaverTests/CuratorScreenSaverTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CuratorScreenSaverTests/CuratorScreenSaverTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		54754F7018AD0E80001C8220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6E8E7C62BFD4BECA90AD2D8 /* Pods-CuratorScreenSaverTests.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CuratorScreenSaverTests/CuratorScreenSaverTests-Prefix.pch";
+				INFOPLIST_FILE = "CuratorScreenSaverTests/CuratorScreenSaverTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54754F3118AD0970001C8220 /* Build configuration list for PBXProject "CuratorScreenSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54754F4D18AD0970001C8220 /* Debug */,
+				54754F4E18AD0970001C8220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54754F4F18AD0970001C8220 /* Build configuration list for PBXNativeTarget "CuratorScreenSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54754F5018AD0970001C8220 /* Debug */,
+				54754F5118AD0970001C8220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54754F6E18AD0E80001C8220 /* Build configuration list for PBXNativeTarget "CuratorScreenSaverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54754F6F18AD0E80001C8220 /* Debug */,
+				54754F7018AD0E80001C8220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54754F2E18AD0970001C8220 /* Project object */;
+}

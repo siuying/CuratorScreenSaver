@@ -8,6 +8,8 @@
 
 #import "AFHTTPSessionManager.h"
 
+@class BFTask;
+
 /**
  * API Client for Curator.im
  */
@@ -20,6 +22,6 @@
 /**
  * Get a stream using a block.
  */
--(void) streamWithBlock:(void (^)(NSArray *images, NSError *error))block;
+-(BFTask*) getStreamAsync;
 
 @end

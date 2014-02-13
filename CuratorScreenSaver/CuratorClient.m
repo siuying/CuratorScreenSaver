@@ -9,6 +9,7 @@
 #import "CuratorClient.h"
 #import "CuratorImage.h"
 
+#import "Bolts.h"
 #import "ObjectiveSugar.h"
 #import "NSDateFormatter+JSONDateFormatter.h"
 
@@ -56,10 +57,14 @@ static NSString * const CuratorClientAPIBaseURLString = @"http://curator.im/api/
                   // only return valus with image and height or width > 400
                   return image.name && image.height > 400 && image.width > 400;
               }];
-              block(images, nil);
+              [source setResult:images];
           }
       } failure:^(NSURLSessionDataTask *task, NSError *error) {
-          block(nil, error);
+          [source setError:error];
+      }];
+    return source.task;
+}
+
       }];
 }
 

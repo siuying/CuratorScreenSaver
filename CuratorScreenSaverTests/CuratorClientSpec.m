@@ -11,6 +11,7 @@
 #import "CuratorClientSettings.h"
 #import "ObjectiveSugar.h"
 #import "CuratorImage.h"
+#import "Bolts.h"
 
 SPEC_BEGIN(CuratorClientSpec)
 
@@ -22,16 +23,12 @@ describe(@"CuratorClient", ^{
         client.token = CuratorAPIClientKey;
     });
 
-    context(@"-streamWithBlock:", ^{
+    context(@"-getStreamAsync", ^{
         it(@"fetch stream images", ^{
-            __block NSArray* resultImages;
+            BFTask* task = [client getStreamAsync];
+            [[expectFutureValue(task.result) shouldEventually] beNonNil];
 
-            [client streamWithBlock:^(NSArray *images, NSError *error) {
-                resultImages = images;
-            }];
-            
-            [[expectFutureValue(resultImages) shouldEventually] beNonNil];
-            [resultImages each:^(CuratorImage* image) {
+            [task.result each:^(CuratorImage* image) {
                 [[[image name] shouldNot] beNil];
                 [[theValue([image height]) should] beGreaterThan:theValue(400)];
                 [[theValue([image width]) should] beGreaterThan:theValue(400)];

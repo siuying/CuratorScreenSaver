@@ -26,6 +26,7 @@ PODS:
   - Kiwi/XCTest (2.2.3):
     - Kiwi/ARC
     - Kiwi/NonARC
+  - Masonry (0.4.0)
   - ObjectiveSugar (1.1.0)
 
 DEPENDENCIES:
@@ -33,6 +34,7 @@ DEPENDENCIES:
   - Bolts (>= 1.0.0)
   - CocoaLumberjack
   - Kiwi/XCTest
+  - Masonry
   - ObjectiveSugar
 
 SPEC CHECKSUMS:
@@ -40,6 +42,7 @@ SPEC CHECKSUMS:
   Bolts: 45bceb8be6243d242caf74308563bba02c2af2a3
   CocoaLumberjack: 6ed94046d2ca7fde03a73b3d01b8cfc56574b314
   Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
+  Masonry: d673617c9cbc24aaea90fba20b10e47fd9970a39
   ObjectiveSugar: fed588577bcf9733546aeaa089de444e4bab9a52
 
 COCOAPODS: 0.29.0

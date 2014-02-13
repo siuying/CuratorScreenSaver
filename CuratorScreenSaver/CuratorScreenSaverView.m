@@ -16,11 +16,12 @@
 #import "Bolts.h"
 #import "DDASLLogger.h"
 #import "DDTTYLogger.h"
+#import "Masonry.h"
 
 #import "DDLog.h"
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
-const CGFloat kRefreshImageInterval = 10.0;
+const CGFloat kRefreshImageInterval = 5.0;
 const CGFloat kRefreshDataInterval = 60.0 * 60.0 * 12.0;
 
 @interface CuratorScreenSaverView()
@@ -43,21 +44,24 @@ const CGFloat kRefreshDataInterval = 60.0 * 60.0 * 12.0;
         [DDLog addLogger:[DDASLLogger sharedInstance]];
         [DDLog addLogger:[DDTTYLogger sharedInstance]];
 
-        self.imageView = [[NSImageView alloc] initWithFrame:[self activeScreenRect]];
+        self.imageView = [[NSImageView alloc] initWithFrame:NSZeroRect];
+        self.imageView.imageScaling = NSImageScaleProportionallyUpOrDown;
+        self.imageView.imageAlignment = NSImageAlignCenter;
         [self addSubview:self.imageView];
         
-        self.label = [[NSTextField alloc] initWithFrame:NSMakeRect(0, 0, self.bounds.size.width, 100)];
+        self.label = [[NSTextField alloc] initWithFrame:NSZeroRect];
         self.label.autoresizingMask = NSViewWidthSizable;
-        self.label.alignment = NSCenterTextAlignment;
-        self.label.backgroundColor = [NSColor clearColor];
-        [self.label setEditable:NO];
-        [self.label setBezeled:NO];
+        self.label.alignment = NSLeftTextAlignment;
+        self.label.backgroundColor = [NSColor whiteColor];
         self.label.textColor = [NSColor blackColor];
-        
-        self.label.font = [NSFont fontWithName:@"Helvetica Neue" size:24.0];
+        [self.label setEditable:NO];
+        [self.label setBezeled:NO];        
+        self.label.font = [NSFont fontWithName:@"Helvetica Neue" size:32.0];
         [self.label setStringValue:@"Loading ..."];
         [self addSubview:self.label];
-        
+
+        [self createConstraints];
+
         self.client = [CuratorClient sharedClient];
         self.imageClient = [CuratorImageClient sharedClient];
 
@@ -79,7 +83,6 @@ const CGFloat kRefreshDataInterval = 60.0 * 60.0 * 12.0;
 - (void)drawRect:(NSRect)rect
 {
     [super drawRect:rect];
-    [self drawCurator];
     
     [[NSColor whiteColor] setFill];
     NSRectFill(rect);
@@ -101,6 +104,23 @@ const CGFloat kRefreshDataInterval = 60.0 * 60.0 * 12.0;
 }
 
 #pragma mark - Private
+
+-(void) createConstraints
+{
+    NSRect screen = [NSScreen mainScreen].frame;
+
+    [self.label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.mas_top);
+        make.left.equalTo(self.mas_left);
+    }];
+
+    [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.mas_top);
+        make.left.equalTo(self.mas_left);
+        make.width.equalTo(@(screen.size.width));
+        make.height.equalTo(@(screen.size.height));
+    }];
+}
 
 - (void) refreshCurator
 {
@@ -154,35 +174,6 @@ const CGFloat kRefreshDataInterval = 60.0 * 60.0 * 12.0;
         DDLogWarn(@"image not found!");
         [self performSelector:@selector(nextRandomImage) withObject:nil afterDelay:kRefreshImageInterval];
     }
-}
-
-- (void) drawCurator
-{
-    CGRect r = self.imageView.frame;
-    r.origin.x = self.bounds.size.width / 2 - r.size.width / 2;
-    r.origin.y = self.bounds.size.height / 2 - r.size.height / 2;
-    self.imageView.frame = r;
-
-    NSSize s = [self.label.stringValue sizeWithAttributes:@{NSFontAttributeName: self.label.font}];
-    CGRect rl = self.label.frame;
-    rl.size.height = s.height;
-    rl.origin.y = self.imageView.frame.origin.y - 60;
-    self.label.frame = rl;
-    self.label.textColor = [NSColor blackColor];
-}
-
-- (NSRect) activeScreenRect
-{
-    NSRect screenRect;
-    NSArray *screenArray = [NSScreen screens];
-    NSInteger screenCount = [screenArray count];
-    
-    for (NSInteger i = 0; i < screenCount; i++)
-    {
-        NSScreen *screen = [screenArray objectAtIndex:i];
-        screenRect = [screen visibleFrame];
-    }
-    return screenRect;
 }
 
 @end

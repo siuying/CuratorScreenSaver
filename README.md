@@ -1,4 +1,4 @@
-# 小海嚴選正妹 Screen Saver
+# 小海嚴選正妹 Screen Saver for Mac
 
 Save your screen.
 

@@ -16,6 +16,11 @@ PODS:
   - AFNetworking/Security (2.1.0)
   - AFNetworking/Serialization (2.1.0)
   - Bolts (1.0.0)
+  - CocoaLumberjack (1.8.0):
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (1.8.0)
+  - CocoaLumberjack/Extensions (1.8.0):
+    - CocoaLumberjack/Core
   - Kiwi/ARC (2.2.3)
   - Kiwi/NonARC (2.2.3)
   - Kiwi/XCTest (2.2.3):
@@ -26,12 +31,14 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.1.0)
   - Bolts (>= 1.0.0)
+  - CocoaLumberjack
   - Kiwi/XCTest
   - ObjectiveSugar
 
 SPEC CHECKSUMS:
   AFNetworking: c7d7901a83f631414c7eda1737261f696101a5cd
   Bolts: 45bceb8be6243d242caf74308563bba02c2af2a3
+  CocoaLumberjack: 6ed94046d2ca7fde03a73b3d01b8cfc56574b314
   Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
   ObjectiveSugar: fed588577bcf9733546aeaa089de444e4bab9a52
 

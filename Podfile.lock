@@ -21,15 +21,18 @@ PODS:
   - Kiwi/XCTest (2.2.3):
     - Kiwi/ARC
     - Kiwi/NonARC
+  - ObjectiveSugar (1.1.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.1.0)
   - Bolts (>= 1.0.0)
   - Kiwi/XCTest
+  - ObjectiveSugar
 
 SPEC CHECKSUMS:
   AFNetworking: c7d7901a83f631414c7eda1737261f696101a5cd
   Bolts: 45bceb8be6243d242caf74308563bba02c2af2a3
   Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
+  ObjectiveSugar: fed588577bcf9733546aeaa089de444e4bab9a52
 
 COCOAPODS: 0.29.0

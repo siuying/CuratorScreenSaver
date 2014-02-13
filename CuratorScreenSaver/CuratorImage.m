@@ -10,17 +10,19 @@
 
 @implementation CuratorImage
 
-+(instancetype) imageWithName:(NSString*)name imageURLString:(NSString*)imageURLString createdAt:(NSDate*)createdAt
++(instancetype) imageWithName:(NSString*)name imageURLString:(NSString*)imageURLString createdAt:(NSDate*)createdAt height:(CGFloat)height width:(CGFloat)width
 {
-    return [[self alloc] initWithName:name imageURLString:imageURLString createdAt:createdAt];
+    return [[self alloc] initWithName:name imageURLString:imageURLString createdAt:createdAt height:height width:width];
 }
 
--(instancetype) initWithName:(NSString*)name imageURLString:(NSString*)imageURLString createdAt:(NSDate*)createdAt
+-(instancetype) initWithName:(NSString*)name imageURLString:(NSString*)imageURLString createdAt:(NSDate*)createdAt height:(CGFloat)height width:(CGFloat)width
 {
     self = [super init];
     _name = name;
     _imageURLString = imageURLString;
     _createdAt = createdAt;
+    _height = height;
+    _width = width;
     return self;
 }
 

@@ -7,6 +7,10 @@
 //
 
 #import "CuratorClient.h"
+#import "CuratorImage.h"
+
+#import "ObjectiveSugar.h"
+#import "NSDateFormatter+JSONDateFormatter.h"
 
 static NSString * const CuratorClientAPIBaseURLString = @"http://curator.im/api/";
 
@@ -21,7 +25,11 @@ static NSString * const CuratorClientAPIBaseURLString = @"http://curator.im/api/
     return _sharedClient;
 }
 
--(void) streamWithBlock:(void (^)(NSArray *images, NSError *error))block {
+-(instancetype) init{
+    return [super initWithBaseURL:[NSURL URLWithString:CuratorClientAPIBaseURLString]];
+}
+
+-(void) streamWithBlock:(void (^)(NSArray *, NSError *))block {
     if (!self.token) {
         [NSException raise:NSInconsistentArchiveException format:@"token not set for CuratorClient!"];
     }
@@ -29,12 +37,29 @@ static NSString * const CuratorClientAPIBaseURLString = @"http://curator.im/api/
     [self GET:@"stream"
    parameters:@{@"token": self.token}
       success:^(NSURLSessionDataTask *task, id JSON) {
+          NSDateFormatter* formatter = [NSDateFormatter sharedDateFormatterForJSON];
           NSArray *imagesFromResponse = [JSON valueForKeyPath:@"results"];
           if (imagesFromResponse) {
-              
+              NSArray* images = [[imagesFromResponse map:^id(NSDictionary* object) {
+                  NSString* name = object[@"name"];
+                  NSString* url = object[@"image"];
+                  NSString* createdAtString = object[@"created_at"];
+                  NSString* heightString = object[@"height"];
+                  NSString* widthString = object[@"width"];
+                  NSDate* createdAt = [formatter dateFromString:createdAtString];
+                  return [CuratorImage imageWithName:name
+                                      imageURLString:url
+                                           createdAt:createdAt
+                                              height:[heightString floatValue]
+                                               width:[widthString floatValue]];
+              }] select:^BOOL(CuratorImage* image) {
+                  // only return valus with image and height or width > 400
+                  return image.name && image.height > 400 && image.width > 400;
+              }];
+              block(images, nil);
           }
       } failure:^(NSURLSessionDataTask *task, NSError *error) {
-          
+          block(nil, error);
       }];
 }
 

@@ -9,6 +9,8 @@
 #import <Kiwi/Kiwi.h>
 #import "CuratorClient.h"
 #import "CuratorClientSettings.h"
+#import "ObjectiveSugar.h"
+#import "CuratorImage.h"
 
 SPEC_BEGIN(CuratorClientSpec)
 
@@ -20,8 +22,21 @@ describe(@"CuratorClient", ^{
         client.token = CuratorAPIClientKey;
     });
 
-    context(@"", ^{
-        
+    context(@"-streamWithBlock:", ^{
+        it(@"fetch stream images", ^{
+            __block NSArray* resultImages;
+
+            [client streamWithBlock:^(NSArray *images, NSError *error) {
+                resultImages = images;
+            }];
+            
+            [[expectFutureValue(resultImages) shouldEventually] beNonNil];
+            [resultImages each:^(CuratorImage* image) {
+                [[[image name] shouldNot] beNil];
+                [[theValue([image height]) should] beGreaterThan:theValue(400)];
+                [[theValue([image width]) should] beGreaterThan:theValue(400)];
+            }];
+        });
     });
 });
 

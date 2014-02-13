@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12AA0C0CCA144A97820392B0 /* libPods-CuratorScreenSaver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB7D724A9A647E2ABF4007D /* libPods-CuratorScreenSaver.a */; };
 		54754F3C18AD0970001C8220 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54754F3B18AD0970001C8220 /* Cocoa.framework */; };
 		54754F3E18AD0970001C8220 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54754F3D18AD0970001C8220 /* ScreenSaver.framework */; };
 		54754F4818AD0970001C8220 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54754F4618AD0970001C8220 /* InfoPlist.strings */; };
@@ -19,6 +18,11 @@
 		54754F6218AD0E80001C8220 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54754F6118AD0E7F001C8220 /* XCTest.framework */; };
 		54754F6818AD0E80001C8220 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54754F6618AD0E80001C8220 /* InfoPlist.strings */; };
 		54754F7218AD0F3A001C8220 /* CuratorClientSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 54754F7118AD0F3A001C8220 /* CuratorClientSpec.m */; };
+		54754F7518AD11FD001C8220 /* CuratorClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 54754F5518AD0BAD001C8220 /* CuratorClient.m */; };
+		54754F7618AD11FD001C8220 /* CuratorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 54754F5918AD0D09001C8220 /* CuratorImage.m */; };
+		54754F7918AD13FF001C8220 /* NSDateFormatter+JSONDateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 54754F7718AD13FF001C8220 /* NSDateFormatter+JSONDateFormatter.h */; };
+		54754F7A18AD13FF001C8220 /* NSDateFormatter+JSONDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 54754F7818AD13FF001C8220 /* NSDateFormatter+JSONDateFormatter.m */; };
+		54754F7B18AD1630001C8220 /* NSDateFormatter+JSONDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 54754F7818AD13FF001C8220 /* NSDateFormatter+JSONDateFormatter.m */; };
 		8011E2BB114A46358144B289 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C6C07A1F15D4FBBA0D54D7B /* libPods.a */; };
 		80BE25AE3A1947FE848B413A /* libPods-CuratorScreenSaverTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA244A2D89246ADA1F46E41 /* libPods-CuratorScreenSaverTests.a */; };
 /* End PBXBuildFile section */
@@ -58,6 +62,8 @@
 		54754F6B18AD0E80001C8220 /* CuratorScreenSaverTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CuratorScreenSaverTests-Prefix.pch"; sourceTree = "<group>"; };
 		54754F7118AD0F3A001C8220 /* CuratorClientSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CuratorClientSpec.m; sourceTree = "<group>"; };
 		54754F7418AD1001001C8220 /* CuratorClientSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CuratorClientSettings.h; sourceTree = "<group>"; };
+		54754F7718AD13FF001C8220 /* NSDateFormatter+JSONDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+JSONDateFormatter.h"; sourceTree = "<group>"; };
+		54754F7818AD13FF001C8220 /* NSDateFormatter+JSONDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+JSONDateFormatter.m"; sourceTree = "<group>"; };
 		6C6C07A1F15D4FBBA0D54D7B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A87DA93C4CC34ADD926736FE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		EFB7D724A9A647E2ABF4007D /* libPods-CuratorScreenSaver.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CuratorScreenSaver.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,7 +77,6 @@
 			files = (
 				54754F3E18AD0970001C8220 /* ScreenSaver.framework in Frameworks */,
 				54754F3C18AD0970001C8220 /* Cocoa.framework in Frameworks */,
-				12AA0C0CCA144A97820392B0 /* libPods-CuratorScreenSaver.a in Frameworks */,
 				8011E2BB114A46358144B289 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +145,8 @@
 				54754F5318AD0B8F001C8220 /* APIClient */,
 				54754F4A18AD0970001C8220 /* CuratorScreenSaverView.h */,
 				54754F4B18AD0970001C8220 /* CuratorScreenSaverView.m */,
+				54754F7718AD13FF001C8220 /* NSDateFormatter+JSONDateFormatter.h */,
+				54754F7818AD13FF001C8220 /* NSDateFormatter+JSONDateFormatter.m */,
 				54754F4418AD0970001C8220 /* Supporting Files */,
 			);
 			path = CuratorScreenSaver;
@@ -193,6 +200,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54754F7918AD13FF001C8220 /* NSDateFormatter+JSONDateFormatter.h in Headers */,
 				54754F5618AD0BAD001C8220 /* CuratorClient.h in Headers */,
 				54754F5A18AD0D09001C8220 /* CuratorImage.h in Headers */,
 			);
@@ -371,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54754F7A18AD13FF001C8220 /* NSDateFormatter+JSONDateFormatter.m in Sources */,
 				54754F4C18AD0970001C8220 /* CuratorScreenSaverView.m in Sources */,
 				54754F5718AD0BAD001C8220 /* CuratorClient.m in Sources */,
 				54754F5B18AD0D09001C8220 /* CuratorImage.m in Sources */,
@@ -381,7 +390,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54754F7B18AD1630001C8220 /* NSDateFormatter+JSONDateFormatter.m in Sources */,
 				54754F7218AD0F3A001C8220 /* CuratorClientSpec.m in Sources */,
+				54754F7518AD11FD001C8220 /* CuratorClient.m in Sources */,
+				54754F7618AD11FD001C8220 /* CuratorImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

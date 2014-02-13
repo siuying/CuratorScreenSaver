@@ -8,7 +8,7 @@ For details, see [小海嚴選 ](http://curator.im/).
 
 ## Installation
 
-[Download the file](http://cl.ly/400t1J3s2Y0i), unzip it and run it.
+[Download the file](http://cl.ly/3823350S001e), unzip it and run it.
 
 ## Development
 

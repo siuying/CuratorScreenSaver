@@ -57,7 +57,6 @@ static NSString * const CuratorClientAPIBaseURLString = @"http://curator.im/api/
                                               height:[heightString floatValue]
                                                width:[widthString floatValue]];
               }] select:^BOOL(CuratorImage* image) {
-                  // only return valus with image and height or width > 400
                   return image.name && image.height > 400 && image.width > 400;
               }];
               [source setResult:images];

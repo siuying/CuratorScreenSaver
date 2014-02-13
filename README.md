@@ -2,6 +2,10 @@
 
 Save your screen.
 
+## Wat?
+
+For details, see [小海嚴選 ](http://curator.im/).
+
 ## Development
 
 1. Checkout the project

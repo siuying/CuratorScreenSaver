@@ -513,11 +513,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A87DA93C4CC34ADD926736FE /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CuratorScreenSaver/CuratorScreenSaver-Prefix.pch";
 				INFOPLIST_FILE = "CuratorScreenSaver/CuratorScreenSaver-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = saver;
 			};
@@ -527,11 +529,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A87DA93C4CC34ADD926736FE /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CuratorScreenSaver/CuratorScreenSaver-Prefix.pch";
 				INFOPLIST_FILE = "CuratorScreenSaver/CuratorScreenSaver-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = saver;
 			};

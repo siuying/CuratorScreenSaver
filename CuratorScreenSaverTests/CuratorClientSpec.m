@@ -26,7 +26,7 @@ describe(@"CuratorClient", ^{
     context(@"-getStreamAsync", ^{
         it(@"fetch stream images", ^{
             BFTask* task = [client getStreamAsync];
-            [[expectFutureValue(task.result) shouldEventually] beNonNil];
+            [[expectFutureValue(task.result) shouldEventuallyBeforeTimingOutAfter(10.0)] beNonNil];
 
             [task.result each:^(CuratorImage* image) {
                 [[[image name] shouldNot] beNil];

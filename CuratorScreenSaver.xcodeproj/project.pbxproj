@@ -23,6 +23,10 @@
 		54754F7918AD13FF001C8220 /* NSDateFormatter+JSONDateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 54754F7718AD13FF001C8220 /* NSDateFormatter+JSONDateFormatter.h */; };
 		54754F7A18AD13FF001C8220 /* NSDateFormatter+JSONDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 54754F7818AD13FF001C8220 /* NSDateFormatter+JSONDateFormatter.m */; };
 		54754F7B18AD1630001C8220 /* NSDateFormatter+JSONDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 54754F7818AD13FF001C8220 /* NSDateFormatter+JSONDateFormatter.m */; };
+		54754F7E18AD2209001C8220 /* CuratorImageClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 54754F7C18AD2209001C8220 /* CuratorImageClient.h */; };
+		54754F7F18AD2209001C8220 /* CuratorImageClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 54754F7D18AD2209001C8220 /* CuratorImageClient.m */; };
+		54754F8118AD227F001C8220 /* CuratorImageClientSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 54754F8018AD227F001C8220 /* CuratorImageClientSpec.m */; };
+		54754F8218AD2311001C8220 /* CuratorImageClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 54754F7D18AD2209001C8220 /* CuratorImageClient.m */; };
 		8011E2BB114A46358144B289 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C6C07A1F15D4FBBA0D54D7B /* libPods.a */; };
 		80BE25AE3A1947FE848B413A /* libPods-CuratorScreenSaverTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA244A2D89246ADA1F46E41 /* libPods-CuratorScreenSaverTests.a */; };
 /* End PBXBuildFile section */
@@ -64,6 +68,9 @@
 		54754F7418AD1001001C8220 /* CuratorClientSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CuratorClientSettings.h; sourceTree = "<group>"; };
 		54754F7718AD13FF001C8220 /* NSDateFormatter+JSONDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+JSONDateFormatter.h"; sourceTree = "<group>"; };
 		54754F7818AD13FF001C8220 /* NSDateFormatter+JSONDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+JSONDateFormatter.m"; sourceTree = "<group>"; };
+		54754F7C18AD2209001C8220 /* CuratorImageClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CuratorImageClient.h; sourceTree = "<group>"; };
+		54754F7D18AD2209001C8220 /* CuratorImageClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CuratorImageClient.m; sourceTree = "<group>"; };
+		54754F8018AD227F001C8220 /* CuratorImageClientSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CuratorImageClientSpec.m; sourceTree = "<group>"; };
 		6C6C07A1F15D4FBBA0D54D7B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A87DA93C4CC34ADD926736FE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		EFB7D724A9A647E2ABF4007D /* libPods-CuratorScreenSaver.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CuratorScreenSaver.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +175,8 @@
 				54754F7418AD1001001C8220 /* CuratorClientSettings.h */,
 				54754F5418AD0BAD001C8220 /* CuratorClient.h */,
 				54754F5518AD0BAD001C8220 /* CuratorClient.m */,
+				54754F7C18AD2209001C8220 /* CuratorImageClient.h */,
+				54754F7D18AD2209001C8220 /* CuratorImageClient.m */,
 				54754F5818AD0D09001C8220 /* CuratorImage.h */,
 				54754F5918AD0D09001C8220 /* CuratorImage.m */,
 			);
@@ -178,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				54754F7118AD0F3A001C8220 /* CuratorClientSpec.m */,
+				54754F8018AD227F001C8220 /* CuratorImageClientSpec.m */,
 				54754F6418AD0E80001C8220 /* Supporting Files */,
 			);
 			path = CuratorScreenSaverTests;
@@ -200,6 +210,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54754F7E18AD2209001C8220 /* CuratorImageClient.h in Headers */,
 				54754F7918AD13FF001C8220 /* NSDateFormatter+JSONDateFormatter.h in Headers */,
 				54754F5618AD0BAD001C8220 /* CuratorClient.h in Headers */,
 				54754F5A18AD0D09001C8220 /* CuratorImage.h in Headers */,
@@ -382,6 +393,7 @@
 				54754F7A18AD13FF001C8220 /* NSDateFormatter+JSONDateFormatter.m in Sources */,
 				54754F4C18AD0970001C8220 /* CuratorScreenSaverView.m in Sources */,
 				54754F5718AD0BAD001C8220 /* CuratorClient.m in Sources */,
+				54754F7F18AD2209001C8220 /* CuratorImageClient.m in Sources */,
 				54754F5B18AD0D09001C8220 /* CuratorImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +403,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				54754F7B18AD1630001C8220 /* NSDateFormatter+JSONDateFormatter.m in Sources */,
+				54754F8218AD2311001C8220 /* CuratorImageClient.m in Sources */,
+				54754F8118AD227F001C8220 /* CuratorImageClientSpec.m in Sources */,
 				54754F7218AD0F3A001C8220 /* CuratorClientSpec.m in Sources */,
 				54754F7518AD11FD001C8220 /* CuratorClient.m in Sources */,
 				54754F7618AD11FD001C8220 /* CuratorImage.m in Sources */,

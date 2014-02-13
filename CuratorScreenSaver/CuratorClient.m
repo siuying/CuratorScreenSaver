@@ -8,6 +8,7 @@
 
 #import "CuratorClient.h"
 #import "CuratorImage.h"
+#import "CuratorClientSettings.h"
 
 #import "Bolts.h"
 #import "ObjectiveSugar.h"
@@ -22,6 +23,7 @@ static NSString * const CuratorClientAPIBaseURLString = @"http://curator.im/api/
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _sharedClient = [[CuratorClient alloc] initWithBaseURL:[NSURL URLWithString:CuratorClientAPIBaseURLString]];
+        _sharedClient.token = CuratorAPIClientKey;
     });
     return _sharedClient;
 }
@@ -30,11 +32,12 @@ static NSString * const CuratorClientAPIBaseURLString = @"http://curator.im/api/
     return [super initWithBaseURL:[NSURL URLWithString:CuratorClientAPIBaseURLString]];
 }
 
--(void) streamWithBlock:(void (^)(NSArray *, NSError *))block {
+-(BFTask*) getStreamAsync {
     if (!self.token) {
         [NSException raise:NSInconsistentArchiveException format:@"token not set for CuratorClient!"];
     }
-
+    
+    BFTaskCompletionSource *source = [BFTaskCompletionSource taskCompletionSource];
     [self GET:@"stream"
    parameters:@{@"token": self.token}
       success:^(NSURLSessionDataTask *task, id JSON) {
@@ -63,9 +66,6 @@ static NSString * const CuratorClientAPIBaseURLString = @"http://curator.im/api/
           [source setError:error];
       }];
     return source.task;
-}
-
-      }];
 }
 
 @end

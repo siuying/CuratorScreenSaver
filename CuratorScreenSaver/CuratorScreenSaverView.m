@@ -21,7 +21,7 @@
 #import "DDLog.h"
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
-const CGFloat kRefreshImageInterval = 5.0;
+const CGFloat kRefreshImageInterval = 10.0;
 const CGFloat kRefreshDataInterval = 60.0 * 60.0 * 12.0;
 
 @interface CuratorScreenSaverView()

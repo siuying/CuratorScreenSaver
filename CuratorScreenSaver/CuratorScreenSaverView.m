@@ -32,7 +32,6 @@ const CGFloat kRefreshDataInterval = 60.0 * 60.0 * 12.0;
 @property (strong) CuratorClient *client;
 @property (strong) CuratorImageClient *imageClient;
 @property (strong) NSArray* images;
-@property (strong) NSTimer* timer;
 @end
 
 @implementation CuratorScreenSaverView

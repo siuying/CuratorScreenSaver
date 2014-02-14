@@ -10,7 +10,7 @@ For details, see [小海嚴選](http://curator.im/).
 
 ## Installation
 
-[Download the file](http://cl.ly/1w362J3X230O), unzip it and run it.
+[Download the file](http://cl.ly/1d2c3o07301H), unzip it and run it.
 
 ## Development
 

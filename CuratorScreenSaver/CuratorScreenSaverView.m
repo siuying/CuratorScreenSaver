@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Ignition Soft. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
+
 #import "CuratorScreenSaverView.h"
 #import "CuratorClient.h"
 #import "CuratorImageClient.h"
@@ -39,6 +41,13 @@ const CGFloat kRefreshDataInterval = 60.0 * 60.0 * 12.0;
 {
     self = [super initWithFrame:frame isPreview:isPreview];
     if (self) {
+        [self setWantsLayer:YES];
+        self.wantsLayer = YES;
+        self.layer = [[CALayer alloc] init];
+        CGColorRef color = CGColorCreateGenericGray(0.0, 1.0);
+        self.layer.backgroundColor = color;
+        CGColorRelease(color);
+
         [self setAnimationTimeInterval:1/30.0];
         
         [DDLog addLogger:[DDASLLogger sharedInstance]];
@@ -48,15 +57,15 @@ const CGFloat kRefreshDataInterval = 60.0 * 60.0 * 12.0;
         self.imageView.imageScaling = NSImageScaleProportionallyUpOrDown;
         self.imageView.imageAlignment = NSImageAlignCenter;
         [self addSubview:self.imageView];
-        
+
         self.label = [[NSTextField alloc] initWithFrame:NSZeroRect];
         self.label.autoresizingMask = NSViewWidthSizable;
         self.label.alignment = NSLeftTextAlignment;
-        self.label.backgroundColor = [NSColor whiteColor];
-        self.label.textColor = [NSColor blackColor];
+        self.label.backgroundColor = [NSColor clearColor];
+        self.label.textColor = [NSColor whiteColor];
         [self.label setEditable:NO];
-        [self.label setBezeled:NO];        
-        self.label.font = [NSFont fontWithName:@"Helvetica Neue" size:32.0];
+        [self.label setBezeled:NO];
+        self.label.font = [NSFont fontWithName:@"Helvetica Neue Light" size:32.0];
         [self.label setStringValue:@"Loading ..."];
         [self addSubview:self.label];
 
@@ -78,14 +87,6 @@ const CGFloat kRefreshDataInterval = 60.0 * 60.0 * 12.0;
 - (void)stopAnimation
 {
     [super stopAnimation];
-}
-
-- (void)drawRect:(NSRect)rect
-{
-    [super drawRect:rect];
-    
-    [[NSColor whiteColor] setFill];
-    NSRectFill(rect);
 }
 
 - (void)animateOneFrame
@@ -110,15 +111,15 @@ const CGFloat kRefreshDataInterval = 60.0 * 60.0 * 12.0;
     NSRect screen = [NSScreen mainScreen].frame;
 
     [self.label mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.mas_top);
-        make.left.equalTo(self.mas_left);
+        make.top.equalTo(self.mas_top).with.offset(10.0);
+        make.left.equalTo(self.mas_left).with.offset(10.0);
     }];
 
     [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.mas_top);
-        make.left.equalTo(self.mas_left);
-        make.width.equalTo(@(screen.size.width));
-        make.height.equalTo(@(screen.size.height));
+        make.top.equalTo(self.mas_top).with.offset(10.0);
+        make.left.equalTo(self.mas_left).with.offset(10.0);
+        make.width.equalTo(@(screen.size.width - 20));
+        make.height.equalTo(@(screen.size.height - 20));
     }];
 }
 
@@ -164,6 +165,28 @@ const CGFloat kRefreshDataInterval = 60.0 * 60.0 * 12.0;
                 DDLogDebug(@"image loaded: %@ (%@)", curatorImage.name, curatorImage.imageURLString);
                 [self.imageView setImage:task.result];
                 [self.label setStringValue:curatorImage.name];
+
+                NSImage *originalImage = task.result;
+
+                CIFilter* blackGenerator = [CIFilter filterWithName:@"CIConstantColorGenerator"];
+                CIColor* black = [CIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.9];
+                [blackGenerator setValue:black forKey:@"inputColor"];
+                CIImage* blackImage = [blackGenerator valueForKey:@"outputImage"];
+
+                CIFilter *compositeFilter = [CIFilter filterWithName:@"CIMultiplyBlendMode"];
+                [compositeFilter setValue:blackImage forKey:@"inputImage"];
+                [compositeFilter setValue:[CIImage imageWithData:originalImage.TIFFRepresentation] forKey:@"inputBackgroundImage"];
+                CIImage *darkenedImage = [compositeFilter valueForKey: @"outputImage"];
+
+                CIFilter *blurFilter = [CIFilter filterWithName:@"CIGaussianBlur"];
+                [blurFilter setDefaults];
+                [blurFilter setValue:darkenedImage forKey:@"inputImage"];
+                [blurFilter setValue:@20 forKey:@"inputRadius"];
+                CIImage *effectedImage = [blurFilter valueForKey: @"outputImage"];
+
+                effectedImage = [effectedImage imageByCroppingToRect:CGRectMake(0, 0, originalImage.size.width, originalImage.size.height)];
+                NSBitmapImageRep *rep = [[NSBitmapImageRep alloc] initWithCIImage:effectedImage];
+                self.layer.contents = (__bridge id)(rep.CGImage);
             }
             
             // schedle next invocation
@@ -175,5 +198,6 @@ const CGFloat kRefreshDataInterval = 60.0 * 60.0 * 12.0;
         [self performSelector:@selector(nextRandomImage) withObject:nil afterDelay:kRefreshImageInterval];
     }
 }
+
 
 @end

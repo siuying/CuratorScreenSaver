@@ -21,7 +21,7 @@
 #import "Masonry.h"
 
 #import "DDLog.h"
-static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+static const int ddLogLevel = LOG_LEVEL_ERROR;
 
 const CGFloat kRefreshImageInterval = 10.0;
 const CGFloat kRefreshDataInterval = 60.0 * 60.0 * 12.0;

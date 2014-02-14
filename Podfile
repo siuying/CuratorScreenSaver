@@ -1,4 +1,4 @@
-platform :osx, "10.9"
+platform :osx, "10.8"
 
 pod "AFNetworking", '~> 2.1.0'
 pod "Bolts", '>= 1.0.0'

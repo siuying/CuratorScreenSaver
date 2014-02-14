@@ -163,30 +163,10 @@ const CGFloat kRefreshDataInterval = 60.0 * 60.0 * 12.0;
                 [self.label setStringValue:[NSString stringWithFormat:@"error downloading image: %@", [task.error localizedDescription]]];
             } else {
                 DDLogDebug(@"image loaded: %@ (%@)", curatorImage.name, curatorImage.imageURLString);
-                [self.imageView setImage:task.result];
+                NSImage* image = task.result;
+                [self.imageView setImage:image];
                 [self.label setStringValue:curatorImage.name];
-
-                NSImage *originalImage = task.result;
-
-                CIFilter* blackGenerator = [CIFilter filterWithName:@"CIConstantColorGenerator"];
-                CIColor* black = [CIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.9];
-                [blackGenerator setValue:black forKey:@"inputColor"];
-                CIImage* blackImage = [blackGenerator valueForKey:@"outputImage"];
-
-                CIFilter *compositeFilter = [CIFilter filterWithName:@"CIMultiplyBlendMode"];
-                [compositeFilter setValue:blackImage forKey:@"inputImage"];
-                [compositeFilter setValue:[CIImage imageWithData:originalImage.TIFFRepresentation] forKey:@"inputBackgroundImage"];
-                CIImage *darkenedImage = [compositeFilter valueForKey: @"outputImage"];
-
-                CIFilter *blurFilter = [CIFilter filterWithName:@"CIGaussianBlur"];
-                [blurFilter setDefaults];
-                [blurFilter setValue:darkenedImage forKey:@"inputImage"];
-                [blurFilter setValue:@20 forKey:@"inputRadius"];
-                CIImage *effectedImage = [blurFilter valueForKey: @"outputImage"];
-
-                effectedImage = [effectedImage imageByCroppingToRect:CGRectMake(0, 0, originalImage.size.width, originalImage.size.height)];
-                NSBitmapImageRep *rep = [[NSBitmapImageRep alloc] initWithCIImage:effectedImage];
-                self.layer.contents = (__bridge id)(rep.CGImage);
+                [self updateLayer:image];
             }
             
             // schedle next invocation
@@ -197,6 +177,29 @@ const CGFloat kRefreshDataInterval = 60.0 * 60.0 * 12.0;
         DDLogWarn(@"image not found!");
         [self performSelector:@selector(nextRandomImage) withObject:nil afterDelay:kRefreshImageInterval];
     }
+}
+
+-(void) updateLayer:(NSImage*)image
+{
+    CIFilter* blackGenerator = [CIFilter filterWithName:@"CIConstantColorGenerator"];
+    CIColor* black = [CIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.9];
+    [blackGenerator setValue:black forKey:@"inputColor"];
+    CIImage* blackImage = [blackGenerator valueForKey:@"outputImage"];
+    
+    CIFilter *compositeFilter = [CIFilter filterWithName:@"CIMultiplyBlendMode"];
+    [compositeFilter setValue:blackImage forKey:@"inputImage"];
+    [compositeFilter setValue:[CIImage imageWithData:image.TIFFRepresentation] forKey:@"inputBackgroundImage"];
+    CIImage *darkenedImage = [compositeFilter valueForKey: @"outputImage"];
+    
+    CIFilter *blurFilter = [CIFilter filterWithName:@"CIGaussianBlur"];
+    [blurFilter setDefaults];
+    [blurFilter setValue:darkenedImage forKey:@"inputImage"];
+    [blurFilter setValue:@20 forKey:@"inputRadius"];
+    CIImage *effectedImage = [blurFilter valueForKey: @"outputImage"];
+    
+    effectedImage = [effectedImage imageByCroppingToRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+    NSBitmapImageRep *rep = [[NSBitmapImageRep alloc] initWithCIImage:effectedImage];
+    self.layer.contents = (__bridge id)(rep.CGImage);
 }
 
 

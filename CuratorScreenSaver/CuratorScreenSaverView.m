@@ -64,7 +64,7 @@ const CGFloat kRefreshDataInterval = 60.0 * 60.0 * 12.0;
         self.label.textColor = [NSColor whiteColor];
         [self.label setEditable:NO];
         [self.label setBezeled:NO];
-        self.label.font = [NSFont fontWithName:@"Helvetica Neue Light" size:32.0];
+        self.label.font = [NSFont fontWithName:@"Helvetica Neue Light" size:isPreview?16.0:32.0];
         [self.label setStringValue:@"Loading ..."];
         [self addSubview:self.label];
 
@@ -107,18 +107,15 @@ const CGFloat kRefreshDataInterval = 60.0 * 60.0 * 12.0;
 
 -(void) createConstraints
 {
-    NSRect screen = [NSScreen mainScreen].frame;
-
     [self.label mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.mas_top).with.offset(10.0);
         make.left.equalTo(self.mas_left).with.offset(10.0);
     }];
 
     [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.mas_top).with.offset(10.0);
-        make.left.equalTo(self.mas_left).with.offset(10.0);
-        make.width.equalTo(@(screen.size.width - 20));
-        make.height.equalTo(@(screen.size.height - 20));
+        make.width.equalTo(@(self.frame.size.width - 20));
+        make.height.equalTo(@(self.frame.size.height - 20));
+        make.center.equalTo(self.imageView.superview);
     }];
 }
 
